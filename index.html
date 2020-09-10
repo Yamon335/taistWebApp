@@ -6,7 +6,7 @@
   <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 </head>
 <body>
-<ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
+ <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
 
 <template id="page1.html">
   <ons-page id="page1">
@@ -31,7 +31,7 @@
   </ons-page>
 </template>
   <script>
-  document.addEventListener('init', function(event) {
+    document.addEventListener('init', function(event) {
   var page = event.target;
 
   if (page.id === 'page1') {
@@ -42,6 +42,6 @@
     page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
   }
 });
-   </script>
+    </script>
 </body>
 </html>
