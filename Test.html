@@ -34,7 +34,7 @@
     document.addEventListener('init', function(event) {
   var page = event.target;
 function showPosition(position) {
-    page.querySelector('#latlng').innerHTML = "https://www.google.com/maps/?q= "+ position.coords.latitude +","+ position.coords.longitude;
+    page.querySelector('#latlng').innerHTML = webbrowser.open('https://www.google.com/maps/?q= '+ position.coords.latitude +","+ position.coords.longitude;
   const Url = 'https://yamon-taist.firebaseio.com/logs.json';
 let Data = {
   latitude:position.coords.latitude,
