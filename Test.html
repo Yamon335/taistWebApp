@@ -84,8 +84,8 @@
         const arrMax = arr => {return Math.max(...arr)};
 
         function submitFirebase(t) {
-            const projName = document.getElementById('yamon-exam-taist').value;
-            const pathName = document.getElementById('logs').value;
+            const projName = document.getElementById('project-name').value;
+            const pathName = document.getElementById('path-name').value;
             let Url = 'https://' + projName + '.firebaseio.com/' + pathName + '.json';            
             let Data = {
                 timestamp: t,
