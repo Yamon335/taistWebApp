@@ -125,6 +125,7 @@
         motionXMax: motionXMax,
         motionYMax: motionYMax,
         motionZMax: motionZMax,
+        velocity:finalvelocity,
     };
     const Params = {
         headers: {
@@ -195,6 +196,7 @@
             motionX = [];
             motionY = [];
             motionZ = [];
+            final velocity=[];
             }
             document.getElementById("gps-status").innerHTML =
             pos.coords.latitude.toString() +
@@ -225,7 +227,9 @@
             motionXMax = [];
             motionYMax = [];
             motionZMax = [];
+            finalvelocity=[];
             prevTick = Date.now();
+               
             }
         },
         (err) => {
