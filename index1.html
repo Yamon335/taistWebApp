@@ -286,7 +286,7 @@
     if (time > 1000) {
         return 0;
     }
-    const vf = (v0 + accelation * (time/3600))*1000;
+    const vf = (v0 + accelation * (time/3600))/1000;
         
     return vf;
     };
